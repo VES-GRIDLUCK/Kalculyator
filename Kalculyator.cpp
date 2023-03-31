@@ -69,7 +69,7 @@ double term()
 
 			if (temp == 0.0)
 			{
-				cout << "Delenie na 0!" << endl;
+				cout << "Деление на 0!" << endl;
 				exit(-1);
 			}
 
@@ -140,7 +140,7 @@ double factor()
 
 		if (bracket != ')')
 		{
-			cout << "Skobki neverno stojat" << std::endl;
+			cout << "Нехватает скобки!" << std::endl;
 			exit(-1);
 		}
 	}
