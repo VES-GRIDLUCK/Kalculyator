@@ -116,7 +116,7 @@ double factor()
 	char bracket;
 	int sign = 1;
 
-	bracket = std::cin.get();
+	bracket = cin.get();
 
 	while (bracket == ' ')
 		bracket = cin.get();
@@ -136,7 +136,7 @@ double factor()
 	if (bracket == '(')
 	{
 		result = expression();
-		bracket = std::cin.get();
+		bracket = cin.get();
 
 		if (bracket != ')')
 		{
@@ -224,7 +224,7 @@ int main()
 	system("Color E0");
 	interface();
 	double n;
-	cout << "Ввеите ваш пример " << endl;
+	cout << "Введите ваш пример " << endl;
 	n = expression();
 
 	cout << "Ответ : " << n << endl;
