@@ -222,16 +222,20 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	system("Color E0");
-	interface();
-	double n;
-	cout << "Введите ваш пример " << endl;
-	n = expression();
+	while (true) {
+		switch (true) {
+		case 1:
+			double n;
+			cout << "Введите ваш пример " << endl;
+			n = expression();
 
-	cout << "Ответ : " << n << endl;
+			cout << "Ответ : " << n << endl;
 
-	cin.get();
-	cin.get();
-	return 0;	
+			cin.get();
+			cin.get();
+			break;
+		}
+	}
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
