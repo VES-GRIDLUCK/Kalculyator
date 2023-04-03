@@ -19,7 +19,7 @@ void interface()
 	cout << "\t\t|                          $$$$$$$$$$$$$                        |\n";
 	cout << "\t\t=================================================================\n";
 }
-
+//Сложение и вычитание
 double expression()
 {
 	double result;
@@ -47,6 +47,7 @@ double expression()
 		}
 	}
 }
+//Умножение и деление проверка на 0
 double term()
 {
 	double result;
@@ -70,7 +71,6 @@ double term()
 			if (temp == 0.0)
 			{
 				cout << "Деление на 0!" << endl;
-				exit(-1);
 			}
 
 			result /= temp;
@@ -81,6 +81,7 @@ double term()
 		}
 	}
 }
+//Степени
 double power()
 {
 	double result;
@@ -110,6 +111,7 @@ double power()
 
 	return args[0];
 }
+//Скобки
 double factor()
 {
 	double result;
@@ -141,7 +143,6 @@ double factor()
 		if (bracket != ')')
 		{
 			cout << "Нехватает скобки!" << std::endl;
-			exit(-1);
 		}
 	}
 	else
@@ -152,6 +153,7 @@ double factor()
 
 	return sign * result;
 }
+//Знаки после запятой
 double number()
 {
 	double result = 0.0;
@@ -222,6 +224,7 @@ int main()
 {
 	setlocale(LC_ALL, "ru");
 	system("Color E0");
+	interface();
 	while (true) {
 		switch (true) {
 		case 1:
@@ -237,7 +240,6 @@ int main()
 		}
 	}
 }
-
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
 
